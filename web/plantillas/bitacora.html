@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% from "macros.html" import paginacion %}
+{% block titulo %}Bitácora{% endblock %}
+{% block contenido %}
+<div class="acciones" style="justify-content:space-between">
+  <div><h1>Bitácora de avistamientos</h1><p class="sub">{{ total }} registro{{ '' if total == 1 else 's' }} con los filtros actuales.</p></div>
+  <a class="boton secundario" href="{{ url_for('bitacora_csv', **argumentos) }}">Exportar CSV</a>
+</div>
+<div class="tarjeta">
+  <form class="filtros" method="get">
+    <div style="min-width:220px"><label for="especie">Especie</label>
+      <select id="especie" name="especie">
+        <option value="">Todas</option>
+        {% for e in opciones_especie %}<option value="{{ e.id_especie }}" {{ 'selected' if argumentos.get('especie') == e.id_especie|string }}>{{ e.nombre_comun }}</option>{% endfor %}
+      </select></div>
+    <div><label for="desde">Desde</label><input type="date" id="desde" name="desde" value="{{ argumentos.get('desde', '') }}"></div>
+    <div><label for="hasta">Hasta</label><input type="date" id="hasta" name="hasta" value="{{ argumentos.get('hasta', '') }}"></div>
+    <div><label for="simulacion">Modo demostración</label>
+      <select id="simulacion" name="simulacion">
+        <option value="1" {{ 'selected' if argumentos.get('simulacion', '1') == '1' }}>Incluir</option>
+        <option value="0" {{ 'selected' if argumentos.get('simulacion') == '0' }}>Excluir</option>
+      </select></div>
+    <button class="boton" type="submit">Filtrar</button>
+    <a class="enlace" href="{{ url_for('bitacora') }}">Limpiar</a>
+  </form>
+  <div class="tabla"><table>
+    <tr><th>Fecha y hora</th><th>Captura</th><th>Especie</th><th class="num">Confianza</th><th class="num">Caja (px)</th><th>Origen</th></tr>
+    {% for f in filas %}
+    <tr>
+      <td>{{ f.timestamp_deteccion }}</td>
+      <td>{% if f.ruta_captura_thumb %}<a href="{{ url_archivo(f.ruta_captura_thumb) }}" target="_blank"><img class="mini" src="{{ url_archivo(f.ruta_captura_thumb) }}" alt=""></a>{% endif %}</td>
+      <td><a href="{{ url_for('especie', id_especie=f.id_especie) }}">{{ f.nombre_comun }}</a><div class="cientifico">{{ f.nombre_cientifico }}</div></td>
+      <td class="num">{{ f.nivel_confianza | porcentaje }}</td>
+      <td class="num">{{ f.ancho_bbox_px }} × {{ f.alto_bbox_px }}</td>
+      <td>{% if f.es_simulacion %}<span class="chip atencion">Demostración</span>{% else %}<span class="chip bien">Cámara</span>{% endif %}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="6">Sin avistamientos con estos filtros.</td></tr>
+    {% endfor %}
+  </table></div>
+  {{ paginacion(pagina, paginas, 'bitacora', argumentos) }}
+</div>
+{% endblock %}

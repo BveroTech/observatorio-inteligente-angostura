@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% from "macros.html" import paginacion %}
+{% block titulo %}Por identificar{% endblock %}
+{% block contenido %}
+<div class="acciones" style="justify-content:space-between">
+  <div>
+    <h1>Aves por identificar</h1>
+    <p class="sub">Aves que la cámara detectó pero el modelo no reconoció. Indica qué especie es:
+      esas fotos se suman al próximo entrenamiento y el modelo aprende a reconocerlas.</p>
+  </div>
+</div>
+
+<div class="pestanas">
+  {% for clave, texto in estados.items() %}
+  <a href="{{ url_for('por_identificar', estado=clave) }}" class="{{ 'activo' if estado == clave }}">{{ texto }} <span class="cuenta">{{ conteos[clave] }}</span></a>
+  {% endfor %}
+</div>
+
+{% set foco = especies | selectattr('activo') | list %}
+{% set resto = especies | rejectattr('activo') | list %}
+
+<div class="grilla-aves">
+  {% for f in filas %}
+  <div class="tarjeta ave-desconocida">
+    <a href="{{ url_archivo(f.ruta_captura) }}" target="_blank"><img src="{{ url_archivo(f.ruta_captura) }}" alt="Ave por identificar"></a>
+    <div class="datos">
+      <div>{{ f.timestamp_deteccion }}
+        {% if f.es_simulacion %}<span class="chip atencion">Demostración</span>{% else %}<span class="chip bien">Cámara</span>{% endif %}</div>
+      <div class="cientifico">{{ motivos.get(f.motivo, f.motivo) }}{% if f.clase_sugerida %} · el modelo dudó: {{ f.clase_sugerida }} {{ f.confianza_sugerida | porcentaje }}{% endif %}</div>
+      {% if f.ancho_bbox_px %}<div class="cientifico">Ave de {{ f.ancho_bbox_px }} × {{ f.alto_bbox_px }} px</div>{% endif %}
+    </div>
+
+    {% if estado == 'pendiente' %}
+    <form method="post" action="{{ url_for('resolver_por_identificar', id_registro=f.id_registro) }}" class="identificar">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="volver" value="{{ estado }}">
+      <input type="hidden" name="pagina" value="{{ pagina }}">
+      <label for="esp{{ f.id_registro }}">¿Qué especie es?</label>
+      <select id="esp{{ f.id_registro }}" name="id_especie">
+        <option value="">Elegir especie…</option>
+        <optgroup label="Especies activas">
+          {% for e in foco %}<option value="{{ e.id_especie }}" {{ 'selected' if f.clase_sugerida and e.nombre_comun|lower == f.clase_sugerida|lower and f.motivo == 'sin_ficha' }}>{{ e.nombre_comun }}</option>{% endfor %}
+        </optgroup>
+        <optgroup label="Resto del catálogo">
+          {% for e in resto %}<option value="{{ e.id_especie }}">{{ e.nombre_comun }} ({{ e.nombre_cientifico }})</option>{% endfor %}
+        </optgroup>
+      </select>
+      <div class="acciones">
+        <button class="boton chico" name="accion" value="identificar" type="submit">Guardar especie</button>
+        <button class="boton secundario chico" name="accion" value="no_es_ave" type="submit">No es un ave</button>
+        <button class="boton peligro chico" name="accion" value="descartada" type="submit" title="Foto borrosa o irreconocible">Descartar</button>
+      </div>
+      <p class="cientifico">¿No está en la lista? <a href="{{ url_for('especie') }}" target="_blank">Agrega la especie al catálogo</a> y recarga esta página.</p>
+    </form>
+    {% else %}
+    <div class="resultado">
+      {% if f.estado == 'identificada' %}<b>{{ f.nombre_comun }}</b> <span class="cientifico">{{ f.nombre_cientifico }}</span>
+      {% else %}<b>{{ estados[f.estado] }}</b>{% endif %}
+      <div class="cientifico">Revisó {{ f.revisor or '—' }} · {{ f.fecha_revision or '' }}</div>
+      <form method="post" action="{{ url_for('resolver_por_identificar', id_registro=f.id_registro) }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="volver" value="{{ estado }}">
+        <input type="hidden" name="pagina" value="{{ pagina }}">
+        <button class="enlace" name="accion" value="pendiente" type="submit">Volver a pendientes</button>
+      </form>
+    </div>
+    {% endif %}
+  </div>
+  {% else %}
+  <div class="tarjeta">
+    {% if estado == 'pendiente' %}No hay aves por identificar. Cuando la cámara vea un ave que el modelo no reconoce, aparecerá aquí.
+    {% else %}No hay registros en «{{ estados[estado] }}».{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{{ paginacion(pagina, paginas, 'por_identificar', argumentos) }}
+{% endblock %}

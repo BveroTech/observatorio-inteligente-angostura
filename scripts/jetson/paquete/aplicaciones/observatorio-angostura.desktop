@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Observatorio de Aves
+GenericName=Kiosco del Observatorio
+Comment=Identificación de aves en vivo, catálogo y trivia
+Exec=observatorio
+Icon=observatorio-angostura
+Terminal=false
+Categories=Education;Science;
+StartupNotify=false

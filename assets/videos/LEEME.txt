@@ -1,0 +1,13 @@
+Video del Modo Demostración
+===========================
+
+Copia aquí un video llamado "demo.mp4" con aves del embalse (idealmente
+grabado con la misma cámara del Centro de Visitantes).
+
+Se usa en dos casos:
+  - cuando la cámara deja de enviar imagen por más de SEGUNDOS_FAILOVER
+    (5 s): el kiosco muestra el banner MODO DEMOSTRACIÓN y los avistamientos
+    se guardan con es_simulacion = 1, para no mezclarlos con los reales;
+  - en desarrollo, con  python observatorio.py --fuente video
+
+Si no hay video, el kiosco muestra "Sin señal" mientras intenta reconectar.

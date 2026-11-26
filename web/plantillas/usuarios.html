@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block titulo %}Usuarios{% endblock %}
+{% block contenido %}
+<h1>Usuarios del portal</h1>
+<p class="sub">Especialista: catálogo y bitácora. Administrador: además panel de métricas y usuarios.</p>
+<div class="tarjeta">
+  <div class="tabla"><table>
+    <tr><th>Nombre</th><th>Correo</th><th>Rol</th><th>Último ingreso</th><th>Acciones</th></tr>
+    {% for u in filas %}
+    <tr>
+      <td><b>{{ u.nombre }}</b>{% if u.id_usuario == usuario.id_usuario %} <span class="chip info">Tú</span>{% endif %}</td>
+      <td>{{ u.correo }}</td>
+      <td>
+        <form class="en-linea" method="post" action="{{ url_for('editar_usuario', id_usuario=u.id_usuario) }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="accion" value="rol">
+          <select name="rol" onchange="this.form.submit()" style="width:auto">
+            {% for r in roles %}<option {{ 'selected' if r == u.rol }}>{{ r }}</option>{% endfor %}
+          </select>
+          <noscript><button class="boton chico">Cambiar</button></noscript>
+        </form>
+      </td>
+      <td>{{ u.ultimo_login or 'Nunca' }}</td>
+      <td>
+        <form class="en-linea" method="post" action="{{ url_for('editar_usuario', id_usuario=u.id_usuario) }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="accion" value="clave">
+          <input type="password" name="clave" placeholder="Nueva contraseña" minlength="8" required style="width:170px" autocomplete="new-password">
+          <button class="boton secundario chico" type="submit">Restablecer</button>
+        </form>
+        {% if u.id_usuario != usuario.id_usuario %}
+        <form class="en-linea" method="post" action="{{ url_for('editar_usuario', id_usuario=u.id_usuario) }}" onsubmit="return confirm('¿Eliminar a {{ u.correo }}?')">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="accion" value="eliminar">
+          <button class="boton peligro chico" type="submit">Eliminar</button>
+        </form>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table></div>
+</div>
+<div class="tarjeta" style="max-width:640px">
+  <h2>Nuevo usuario</h2>
+  <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="campos">
+      <div class="campo"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" required maxlength="100"></div>
+      <div class="campo"><label for="correo">Correo</label><input type="email" id="correo" name="correo" required maxlength="120"></div>
+      <div class="campo"><label for="rol">Rol</label><select id="rol" name="rol">{% for r in roles %}<option>{{ r }}</option>{% endfor %}</select></div>
+      <div class="campo"><label for="clave">Contraseña inicial</label><input type="password" id="clave" name="clave" required minlength="8" autocomplete="new-password"></div>
+    </div>
+    <button class="boton" type="submit">Crear usuario</button>
+  </form>
+</div>
+{% endblock %}

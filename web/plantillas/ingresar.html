@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block titulo %}Ingresar{% endblock %}
+{% block contenido %}
+<div class="ingreso">
+  <div class="tarjeta">
+    <h1>Ingresar</h1>
+    <p class="sub">Acceso para Administradores y Especialistas.</p>
+    {% if sin_usuarios %}
+    <div class="aviso aviso">Todavía no hay usuarios. Crea el primero con <b>scripts\lanzadores_windows\crear_usuario.bat</b> (o <code>python scripts\cli_admin\crear_usuario.py</code>).</div>
+    {% endif %}
+    <form method="post">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <div class="campo"><label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" value="{{ correo }}" required autofocus autocomplete="username"></div>
+      <div class="campo"><label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" required autocomplete="current-password"></div>
+      <button class="boton" type="submit">Ingresar</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

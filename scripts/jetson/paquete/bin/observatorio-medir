@@ -1,0 +1,4 @@
+#!/bin/bash
+# Mide FPS, ms de inferencia, RAM y temperatura (KPI-02 y KPI-03). Ej.: observatorio-medir --minutos 10 --fuente video
+APP=/opt/observatorio-angostura
+cd "$APP" && exec "$APP/.venv/bin/python" scripts/jetson/medir.py "$@"

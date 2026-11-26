@@ -1,0 +1,781 @@
+﻿hora;ave;x;y;ancho;alto;especie_1;prob_1;especie_2;prob_2;especie_3;prob_3
+00:48:24.072;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:24.078;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:24.084;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.090;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:24.096;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.103;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:24.108;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:24.114;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:24.120;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:24.126;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:24.306;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:24.312;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:24.317;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.322;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:24.327;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.333;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:24.338;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:24.343;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:24.348;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:24.354;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:24.495;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:24.502;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:24.508;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.513;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:24.519;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.524;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:24.529;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:24.535;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:24.540;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:24.546;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:24.691;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:24.697;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:24.702;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.707;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:24.712;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.718;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:24.723;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:24.727;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:24.733;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:24.738;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:24.882;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:24.888;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:24.894;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.900;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:24.905;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:24.911;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:24.916;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:24.921;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:24.927;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:24.932;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:25.077;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:25.083;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:25.089;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.095;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:25.100;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.105;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:25.112;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:25.117;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:25.122;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:25.128;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:25.295;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:25.301;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:25.306;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.312;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:25.317;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.322;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:25.327;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:25.333;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:25.338;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:25.344;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:25.483;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:25.489;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:25.494;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.500;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:25.506;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.513;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:25.518;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:25.524;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:25.529;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:25.533;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:25.678;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:25.684;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:25.689;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.694;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:25.699;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.705;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:25.711;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:25.717;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:25.722;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:25.727;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:25.877;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:25.882;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:25.887;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.891;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:25.896;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:25.901;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:25.907;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:25.912;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:25.917;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:25.922;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:26.062;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:26.069;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:26.074;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.079;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:26.086;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.092;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:26.097;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:26.102;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:26.107;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:26.113;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:26.252;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:26.258;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:26.263;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.268;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:26.274;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.278;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:26.284;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:26.289;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:26.294;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:26.299;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:26.436;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:26.441;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:26.447;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.453;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:26.458;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.464;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:26.469;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:26.474;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:26.480;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:26.485;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:26.632;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:26.639;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:26.643;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.648;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:26.653;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.657;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:26.661;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:26.666;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:26.671;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:26.676;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:26.820;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:26.826;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:26.831;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.836;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:26.842;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:26.847;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:26.853;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:26.857;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:26.862;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:26.867;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:27.008;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:27.014;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:27.019;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.024;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:27.030;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.036;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:27.043;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:27.048;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:27.053;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:27.058;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:27.195;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:27.201;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:27.207;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.212;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:27.218;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.223;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:27.228;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:27.234;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:27.239;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:27.245;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:27.383;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:27.389;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:27.394;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.400;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:27.405;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.411;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:27.416;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:27.422;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:27.427;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:27.432;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:27.577;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:27.584;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:27.589;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.596;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:27.601;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.607;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:27.612;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:27.617;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:27.623;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:27.629;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:27.767;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:27.772;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:27.778;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.784;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:27.789;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.795;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:27.800;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:27.805;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:27.811;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:27.816;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:27.957;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:27.962;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:27.968;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.973;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:27.978;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:27.983;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:27.988;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:27.994;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:27.999;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:28.004;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:28.151;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:28.156;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:28.162;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.167;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:28.172;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.176;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:28.182;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:28.189;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:28.194;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:28.199;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:28.339;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:28.345;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:28.351;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.356;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:28.362;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.367;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:28.373;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:28.378;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:28.384;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:28.389;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:28.525;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:28.530;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:28.536;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.541;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:28.546;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.551;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:28.557;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:28.562;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:28.567;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:28.572;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:28.716;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:28.723;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:28.729;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.735;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:28.740;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.746;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:28.751;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:28.756;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:28.762;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:28.768;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:28.913;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:28.918;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:28.924;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.929;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:28.934;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:28.939;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:28.945;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:28.950;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:28.956;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:28.962;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:29.109;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:29.115;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:29.119;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.126;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:29.132;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.136;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:29.142;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:29.146;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:29.153;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:29.158;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:29.299;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:29.305;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:29.311;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.316;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:29.322;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.327;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:29.332;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:29.338;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:29.345;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:29.350;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:29.488;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:29.494;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:29.500;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.505;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:29.510;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.515;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:29.519;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:29.526;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:29.532;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:29.537;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:29.676;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:29.682;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:29.687;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.692;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:29.697;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.703;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:29.708;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:29.713;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:29.718;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:29.724;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:29.868;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:29.873;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:29.879;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.884;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:29.890;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:29.896;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:29.901;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:29.907;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:29.912;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:29.917;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:30.072;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:30.078;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:30.083;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.088;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:30.093;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.099;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:30.104;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:30.109;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:30.114;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:30.119;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:30.267;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:30.272;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:30.278;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.284;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:30.290;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.295;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:30.300;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:30.306;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:30.310;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:30.316;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:30.462;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:30.467;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:30.474;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.478;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:30.484;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.490;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:30.495;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:30.500;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:30.505;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:30.511;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:30.659;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:30.665;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:30.670;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.676;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:30.680;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.686;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:30.692;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:30.698;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:30.704;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:30.709;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:30.848;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:30.853;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:30.858;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.864;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:30.870;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:30.875;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:30.881;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:30.886;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:30.892;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:30.897;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:31.040;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:31.046;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:31.052;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.057;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:31.064;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.071;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:31.076;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:31.082;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:31.087;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:31.093;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:31.233;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:31.241;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:31.247;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.252;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:31.258;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.264;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:31.270;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:31.276;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:31.284;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:31.289;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:31.432;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:31.438;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:31.444;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.449;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:31.454;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.459;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:31.464;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:31.469;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:31.475;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:31.480;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:31.618;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:31.625;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:31.631;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.636;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:31.642;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.647;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:31.652;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:31.657;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:31.663;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:31.668;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:31.806;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:31.812;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:31.817;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.822;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:31.827;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:31.832;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:31.838;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:31.843;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:31.849;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:31.854;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:31.990;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:31.996;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:32.001;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.007;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:32.011;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.016;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:32.021;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:32.027;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:32.033;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:32.039;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:32.184;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:32.189;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:32.194;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.199;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:32.204;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.209;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:32.216;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:32.221;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:32.225;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:32.229;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:32.369;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:32.375;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:32.380;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.385;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:32.391;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.397;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:32.403;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:32.408;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:32.413;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:32.418;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:32.559;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:32.565;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:32.570;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.576;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:32.581;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.586;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:32.591;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:32.596;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:32.601;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:32.607;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:32.749;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:32.755;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:32.760;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.766;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:32.770;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.776;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:32.781;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:32.786;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:32.791;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:32.796;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:32.942;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:32.948;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:32.953;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.959;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:32.963;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:32.969;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:32.975;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:32.981;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:32.986;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:32.991;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:33.137;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:33.143;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:33.148;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.153;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:33.158;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.164;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:33.169;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:33.175;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:33.180;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:33.186;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:33.326;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:33.332;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:33.337;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.342;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:33.348;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.354;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:33.359;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:33.364;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:33.369;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:33.374;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:33.516;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:33.522;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:33.527;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.533;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:33.538;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.543;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:33.548;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:33.554;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:33.559;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:33.565;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:33.706;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:33.712;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:33.717;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.722;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:33.727;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.732;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:33.737;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:33.742;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:33.747;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:33.752;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:33.891;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:33.896;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:33.901;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.906;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:33.911;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:33.917;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:33.922;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:33.927;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:33.933;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:33.938;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:34.079;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:34.085;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:34.091;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.096;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:34.101;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.107;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:34.113;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:34.118;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:34.123;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:34.128;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:34.277;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:34.284;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:34.289;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.294;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:34.300;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.305;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:34.310;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:34.316;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:34.321;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:34.327;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:34.476;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:34.482;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:34.487;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.492;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:34.497;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.503;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:34.508;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:34.515;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:34.520;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:34.526;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:34.689;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:34.696;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:34.701;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.707;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:34.712;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.718;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:34.724;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:34.729;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:34.735;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:34.740;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:34.881;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:34.885;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:34.891;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.896;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:34.900;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:34.905;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:34.911;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:34.916;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:34.920;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:34.925;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:35.070;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:35.076;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:35.081;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.087;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:35.092;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.097;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:35.103;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:35.108;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:35.113;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:35.119;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:35.259;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:35.264;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:35.269;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.274;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:35.278;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.284;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:35.289;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:35.293;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:35.298;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:35.304;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:35.443;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:35.449;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:35.455;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.461;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:35.467;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.471;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:35.477;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:35.482;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:35.487;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:35.493;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:35.633;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:35.639;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:35.645;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.651;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:35.656;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.662;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:35.667;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:35.672;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:35.678;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:35.683;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:35.832;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:35.839;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:35.844;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.849;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:35.855;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:35.860;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:35.866;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:35.872;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:35.877;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:35.882;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:36.023;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:36.028;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:36.035;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.042;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:36.048;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.053;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:36.059;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:36.064;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:36.070;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:36.076;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:36.221;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:36.227;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:36.232;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.237;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:36.243;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.248;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:36.253;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:36.258;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:36.263;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:36.268;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:36.420;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:36.425;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:36.431;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.436;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:36.441;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.447;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:36.452;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:36.457;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:36.462;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:36.467;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:36.608;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:36.613;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:36.619;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.625;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:36.630;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.636;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:36.641;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:36.647;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:36.652;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:36.657;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:36.802;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:36.807;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:36.814;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.819;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:36.825;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:36.830;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:36.835;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:36.841;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:36.845;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:36.849;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:37.002;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:37.007;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:37.013;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.018;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:37.024;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.031;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:37.037;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:37.043;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:37.048;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:37.053;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:37.193;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:37.199;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:37.205;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.210;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:37.216;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.221;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:37.226;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:37.232;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:37.238;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:37.244;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:37.404;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:37.409;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:37.414;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.420;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:37.426;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.432;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:37.437;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:37.442;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:37.448;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:37.452;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:37.596;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:37.602;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:37.607;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.612;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:37.617;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.622;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:37.627;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:37.633;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:37.638;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:37.643;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:37.782;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:37.787;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:37.793;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.798;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:37.803;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.808;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:37.813;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:37.818;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:37.823;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:37.828;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:37.970;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:37.976;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:37.982;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.987;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:37.992;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:37.998;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:38.003;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:38.008;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:38.013;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:38.018;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:38.165;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:38.171;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:38.176;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.183;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:38.188;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.193;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:38.198;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:38.204;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:38.210;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:38.213;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:38.349;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:38.355;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:38.360;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.366;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:38.371;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.376;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:38.382;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:38.387;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:38.392;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:38.397;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:38.536;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:38.542;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:38.547;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.552;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:38.557;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.562;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:38.568;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:38.573;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:38.578;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:38.584;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:38.725;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:38.730;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:38.736;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.741;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:38.747;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.753;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:38.758;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:38.764;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:38.769;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:38.775;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000
+00:48:38.916;1;402;82;316;314;Gaviota de Franklin;1.000;Tagua común;0.000;Pato jergon grande;0.000
+00:48:38.923;2;802;543;314;314;Pato rana de pico delgado;1.000;Pato anteojillo;0.000;Martin pescador;0.000
+00:48:38.928;3;40;83;300;307;Cisne de cuello negro;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.932;4;402;537;316;316;Pato jergon grande;1.000;Pato cuchara;0.000;Tagua común;0.000
+00:48:38.937;5;1539;62;341;339;Pato anteojillo;1.000;Tagua común;0.000;Gaviota de Franklin;0.000
+00:48:38.943;6;800;84;304;302;Huala;1.000;Tagua común;0.000;Pato rana de pico delgado;0.000
+00:48:38.948;7;1566;539;292;303;Yeco;0.931;Martin pescador;0.068;Pato jergon grande;0.000
+00:48:38.954;8;1283;632;199;225;Tagua común;1.000;Yeco;0.000;Pato jergon grande;0.000
+00:48:38.959;9;1196;61;305;342;Martin pescador;1.000;Pato rana de pico delgado;0.000;Huala;0.000
+00:48:38.965;10;44;645;244;214;Pato cuchara;0.999;Pato anteojillo;0.001;Pato rana de pico delgado;0.000

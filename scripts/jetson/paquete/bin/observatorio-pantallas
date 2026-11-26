@@ -1,0 +1,10 @@
+#!/bin/bash
+# Monitores del hub MST y paneles táctiles.
+#   observatorio-pantallas --listar   muestra salidas de video y paneles táctiles
+#   observatorio-pantallas --editar   abre config/pantallas.conf para elegirlos
+#   observatorio-pantallas            aplica la configuración
+APP=/opt/observatorio-angostura
+if [ "${1:-}" = "--editar" ]; then
+    exec "${EDITOR:-nano}" "$APP/config/pantallas.conf"
+fi
+exec /bin/bash "$APP/scripts/jetson/configurar_pantallas.sh" "$@"

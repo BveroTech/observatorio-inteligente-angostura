@@ -1,0 +1,90 @@
+﻿n;archivo;etiqueta;predicha;confianza
+1;test/Cisne de cuello negro/inat_70893178.jpg;Cisne de cuello negro;Gaviota de Franklin;0.988
+2;val/Cisne de cuello negro/inat_149434892.jpg;Cisne de cuello negro;Tagua común;0.985
+3;val/Cisne de cuello negro/inat_250913710.jpg;Cisne de cuello negro;Tagua común;0.962
+4;test/Cisne de cuello negro/229_jpg.rf.a87074dc47ff912cd8a7ee8673783669_0.jpg;Cisne de cuello negro;Gaviota de Franklin;0.842
+1;test/Gaviota de Franklin/inat_362266725.jpg;Gaviota de Franklin;Cisne de cuello negro;1.000
+2;test/Gaviota de Franklin/inat_277131303.jpg;Gaviota de Franklin;Yeco;0.986
+3;val/Gaviota de Franklin/inat_169909.jpg;Gaviota de Franklin;Cisne de cuello negro;0.977
+4;test/Gaviota de Franklin/inat_161821744.jpg;Gaviota de Franklin;Tagua común;0.972
+5;val/Gaviota de Franklin/inat_5449389.jpg;Gaviota de Franklin;Pato cuchara;0.831
+6;test/Gaviota de Franklin/inat_197175701.jpg;Gaviota de Franklin;Yeco;0.690
+7;val/Gaviota de Franklin/inat_184859483.jpg;Gaviota de Franklin;Tagua común;0.648
+1;test/Huala/inat_319678437.jpg;Huala;Yeco;0.975
+2;val/Huala/345_jpg.rf.21548193f6305277c8f93de8d856b85a_0.jpg;Huala;Tagua común;0.974
+3;test/Huala/inat_29344724.jpg;Huala;Pato cuchara;0.930
+4;val/Huala/inat_113212810.jpg;Huala;Pato rana de pico delgado;0.741
+1;val/Martin pescador/inat_333518061.jpg;Martin pescador;Huala;0.964
+2;val/Martin pescador/inat_170032149.jpg;Martin pescador;Pato cuchara;0.877
+3;val/Martin pescador/inat_378611314.jpg;Martin pescador;Yeco;0.818
+1;train/Pato anteojillo/inat_380090823_1.jpg;Pato anteojillo;Gaviota de Franklin;1.000
+2;test/Pato anteojillo/inat_366562035_1.jpg;Pato anteojillo;Yeco;1.000
+3;test/Pato anteojillo/inat_67570041_1.jpg;Pato anteojillo;Cisne de cuello negro;1.000
+4;train/Pato anteojillo/inat_18005903.jpg;Pato anteojillo;Pato jergon grande;1.000
+5;test/Pato anteojillo/inat_8755558.jpg;Pato anteojillo;Yeco;1.000
+6;train/Pato anteojillo/inat_265974868_2.jpg;Pato anteojillo;Pato rana de pico delgado;1.000
+7;train/Pato anteojillo/inat_344832962.jpg;Pato anteojillo;Tagua común;0.999
+8;train/Pato anteojillo/inat_223459421.jpg;Pato anteojillo;Tagua común;0.999
+9;train/Pato anteojillo/inat_340388964.jpg;Pato anteojillo;Pato jergon grande;0.993
+10;val/Pato anteojillo/inat_39725746_1.jpg;Pato anteojillo;Pato rana de pico delgado;0.990
+11;test/Pato anteojillo/inat_337963087.jpg;Pato anteojillo;Pato cuchara;0.985
+12;train/Pato anteojillo/inat_4599208_1.jpg;Pato anteojillo;Pato cuchara;0.975
+13;train/Pato anteojillo/inat_167608530_1.jpg;Pato anteojillo;Tagua común;0.969
+14;test/Pato anteojillo/inat_366562035.jpg;Pato anteojillo;Yeco;0.942
+15;val/Pato anteojillo/inat_406385860.jpg;Pato anteojillo;Yeco;0.933
+16;val/Pato anteojillo/inat_82338700.jpg;Pato anteojillo;Tagua común;0.835
+17;val/Pato anteojillo/inat_39725746.jpg;Pato anteojillo;Pato jergon grande;0.833
+18;val/Pato anteojillo/inat_19206490.jpg;Pato anteojillo;Pato rana de pico delgado;0.833
+19;train/Pato anteojillo/inat_309142978.jpg;Pato anteojillo;Gaviota de Franklin;0.794
+20;train/Pato anteojillo/inat_91516873.jpg;Pato anteojillo;Tagua común;0.758
+21;train/Pato anteojillo/inat_58797287.jpg;Pato anteojillo;Yeco;0.749
+22;test/Pato anteojillo/inat_192394103.jpg;Pato anteojillo;Cisne de cuello negro;0.744
+23;train/Pato anteojillo/inat_212397576_2.jpg;Pato anteojillo;Pato rana de pico delgado;0.737
+24;train/Pato anteojillo/inat_260312590_1.jpg;Pato anteojillo;Yeco;0.724
+25;test/Pato anteojillo/inat_339603839.jpg;Pato anteojillo;Pato cuchara;0.704
+26;val/Pato anteojillo/inat_106436003.jpg;Pato anteojillo;Huala;0.680
+27;test/Pato anteojillo/inat_255960955.jpg;Pato anteojillo;Pato jergon grande;0.665
+28;val/Pato anteojillo/inat_398281968.jpg;Pato anteojillo;Pato jergon grande;0.658
+29;train/Pato anteojillo/inat_215124684.jpg;Pato anteojillo;Pato jergon grande;0.640
+30;val/Pato anteojillo/inat_408604159.jpg;Pato anteojillo;Yeco;0.619
+31;train/Pato anteojillo/inat_195387651.jpg;Pato anteojillo;Pato jergon grande;0.606
+1;val/Pato cuchara/inat_100852341.jpg;Pato cuchara;Pato jergon grande;1.000
+2;val/Pato cuchara/inat_223096412.jpg;Pato cuchara;Pato jergon grande;1.000
+3;test/Pato cuchara/inat_226159056.jpg;Pato cuchara;Pato jergon grande;1.000
+4;val/Pato cuchara/inat_151206577.jpg;Pato cuchara;Pato jergon grande;1.000
+5;test/Pato cuchara/inat_152681913.jpg;Pato cuchara;Gaviota de Franklin;1.000
+6;val/Pato cuchara/inat_98764084.jpg;Pato cuchara;Huala;0.999
+7;test/Pato cuchara/inat_86412835.jpg;Pato cuchara;Pato jergon grande;0.994
+8;val/Pato cuchara/inat_191640063.jpg;Pato cuchara;Yeco;0.982
+9;val/Pato cuchara/inat_36756109.jpg;Pato cuchara;Pato jergon grande;0.972
+10;test/Pato cuchara/inat_66379127.jpg;Pato cuchara;Pato jergon grande;0.936
+11;val/Pato cuchara/inat_139217205.jpg;Pato cuchara;Pato jergon grande;0.910
+12;val/Pato cuchara/inat_248974575.jpg;Pato cuchara;Cisne de cuello negro;0.764
+13;test/Pato cuchara/inat_106401780.jpg;Pato cuchara;Huala;0.664
+14;test/Pato cuchara/inat_185556875.jpg;Pato cuchara;Huala;0.610
+1;val/Pato jergon grande/inat_99412396.jpg;Pato jergon grande;Cisne de cuello negro;1.000
+2;val/Pato jergon grande/inat_89102157.jpg;Pato jergon grande;Gaviota de Franklin;0.998
+3;val/Pato jergon grande/inat_68747800.jpg;Pato jergon grande;Huala;0.996
+4;test/Pato jergon grande/inat_243444880.jpg;Pato jergon grande;Pato cuchara;0.988
+5;val/Pato jergon grande/inat_103432433.jpg;Pato jergon grande;Pato cuchara;0.979
+6;test/Pato jergon grande/inat_285914684.jpg;Pato jergon grande;Pato cuchara;0.936
+7;val/Pato jergon grande/315_jpg.rf.f93cb4cee7e9a1f976c0d0ad013ebbd7_0.jpg;Pato jergon grande;Pato cuchara;0.814
+8;test/Pato jergon grande/inat_151990404.jpg;Pato jergon grande;Pato anteojillo;0.754
+9;val/Pato jergon grande/inat_128190691.jpg;Pato jergon grande;Martin pescador;0.712
+1;test/Pato rana de pico delgado/inat_163521088.jpg;Pato rana de pico delgado;Tagua común;1.000
+2;val/Pato rana de pico delgado/inat_282628626.jpg;Pato rana de pico delgado;Huala;0.994
+3;test/Pato rana de pico delgado/inat_148878220.jpg;Pato rana de pico delgado;Pato jergon grande;0.971
+4;test/Pato rana de pico delgado/inat_148135087.jpg;Pato rana de pico delgado;Tagua común;0.957
+5;test/Pato rana de pico delgado/inat_177969108.jpg;Pato rana de pico delgado;Huala;0.844
+6;val/Pato rana de pico delgado/inat_72107177.jpg;Pato rana de pico delgado;Pato cuchara;0.672
+1;test/Tagua común/inat_265967895.jpg;Tagua común;Huala;0.996
+2;val/Tagua común/inat_190334790.jpg;Tagua común;Cisne de cuello negro;0.990
+3;val/Tagua común/inat_82870578.jpg;Tagua común;Yeco;0.943
+4;test/Tagua común/inat_152825235.jpg;Tagua común;Yeco;0.776
+5;test/Tagua común/inat_254252447.jpg;Tagua común;Huala;0.740
+6;test/Tagua común/inat_162978592.jpg;Tagua común;Yeco;0.690
+1;test/Yeco/inat_262586237.jpg;Yeco;Huala;0.932
+2;test/Yeco/146_jpg.rf.05344cd2bf923f84517fcf4f3f805e43_0.jpg;Yeco;Tagua común;0.911
+3;test/Yeco/inat_221453034.jpg;Yeco;Pato rana de pico delgado;0.786
+4;val/Yeco/inat_141194337.jpg;Yeco;Martin pescador;0.769
+5;test/Yeco/inat_255017189.jpg;Yeco;Gaviota de Franklin;0.765

@@ -1,0 +1,28 @@
+# Observatorio Inteligente de Aves · dependencias para NVIDIA Jetson Orin Nano
+# JetPack 6 (Ubuntu 22.04, Python 3.10, CUDA 12) o JetPack 7 (Ubuntu 24.04, Python 3.12, CUDA 13).
+# Las instala el paquete .deb o scripts/jetson/instalar.sh (no a mano): el entorno .venv se crea con
+# --system-site-packages para usar el OpenCV del sistema (con GStreamer) y TensorRT de JetPack.
+#
+# NO están aquí (a diferencia de requirements.txt de Windows):
+#   - onnxruntime / onnxruntime-gpu: lo instala scripts/jetson/instalar_onnxruntime.sh, que
+#     elige la versión según el Python y la CUDA de la placa (verificado el 22-11-2026):
+#       CUDA 12 (JetPack 6): https://pypi.jetson-ai-lab.io/jp6/cu126  -> 1.23.0 / 1.24.0, cp310
+#       CUDA 13 (JetPack 7): https://pypi.jetson-ai-lab.io/sbsa/cu130 -> 1.24.0, cp312
+#                            (y PyPI: 1.29 o superior para aarch64, cp311-cp314, compiladas para CUDA 13)
+#     Si ninguna sirve, instala onnxruntime de CPU y avisa.
+#   - opencv-python: el de PyPI para ARM64 no trae GStreamer ni decodificación por hardware;
+#     se usa el OpenCV del sistema (python3 -c "import cv2").
+#   - dxcam, PyInstaller: solo Windows.
+
+# numpy 1.x: el OpenCV de JetPack/Ubuntu está compilado con numpy 1.x y no carga con numpy 2.
+numpy>=1.21.6,<2
+customtkinter>=5.2.2
+darkdetect>=0.8.0
+Pillow>=10.4.0
+Flask>=3.0.3
+Werkzeug>=3.0.4
+waitress>=3.0.0
+pygame-ce>=2.5.0
+openpyxl>=3.1.5
+mss>=9.0.1          # captura de pantalla (prueba sin cámara; requiere sesión X11)
+screeninfo>=0.8.1   # respaldo para detectar monitores si falta xrandr

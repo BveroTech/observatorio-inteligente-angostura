@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Observatorio · Portal de administración
+Comment=Abre el portal de administración en el navegador
+Exec=observatorio-portal
+Icon=observatorio-angostura
+Terminal=false
+Categories=Education;Science;

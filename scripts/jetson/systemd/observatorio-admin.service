@@ -1,0 +1,21 @@
+# Portal de administración (PanelAdmin) del Observatorio · servicio del SISTEMA.
+# Lo instala scripts/jetson/instalar.sh, que reemplaza __USUARIO__ y __RAIZ__.
+# Arranca con el equipo (sin necesidad de sesión gráfica) y se reinicia si se cae.
+#   sudo systemctl status observatorio-admin
+#   journalctl -u observatorio-admin -f
+[Unit]
+Description=Observatorio Inteligente de Aves - Portal de administracion
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=__USUARIO__
+WorkingDirectory=__RAIZ__
+Environment=PYTHONUNBUFFERED=1
+ExecStart=__RAIZ__/.venv/bin/python main_admin.py --sin-navegador --host 0.0.0.0
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

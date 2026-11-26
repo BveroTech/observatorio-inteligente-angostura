@@ -1,0 +1,25 @@
+# Kiosco (Pantalla 1) + pantalla táctil (Pantalla 2) · servicio de USUARIO.
+# Corre dentro de la sesión gráfica del usuario (necesita X11 en DISPLAY=:0), por
+# eso es un servicio de usuario y no del sistema. Requiere inicio de sesión
+# automático del usuario (ver scripts/jetson/LEEME_JETSON.md).
+# Lo instala scripts/jetson/instalar.sh en ~/.config/systemd/user/ (reemplaza __RAIZ__).
+#   systemctl --user status observatorio-kiosco
+#   systemctl --user stop observatorio-kiosco        (mantención: cierra el kiosco)
+#   journalctl --user -u observatorio-kiosco -f
+[Unit]
+Description=Observatorio Inteligente de Aves - Kiosco y pantalla tactil
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+Environment=PYTHONUNBUFFERED=1
+WorkingDirectory=__RAIZ__
+ExecStartPre=/bin/sleep 3
+ExecStart=/bin/bash __RAIZ__/scripts/jetson/ejecutar_observatorio.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

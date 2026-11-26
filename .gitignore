@@ -1,0 +1,40 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+# Datos locales y secretos
+config/camara_local.json
+data/secretos/clave_secreta.txt
+data/observatorio.db
+data/observatorio.db-wal
+data/observatorio.db-shm
+data/aves_hoy.json
+data/capturas/
+laboratorio_ia/runs/
+laboratorio_ia/dataset_aves/
+laboratorio_ia/dataset_aves_anterior/
+laboratorio_ia/pesos_pytorch/
+laboratorio_ia/*.log
+data/por_identificar/
+laboratorio_ia/dataset_nuevas/
+data/mediciones/
+data/cache_tensorrt/
+data/portal.log
+# Modelos de idiomas (se descargan con scripts/cli_admin/descargar_modelos_idiomas.py)
+modelos/traduccion/
+modelos/tessdata/
+modelos/voces/
+data/cache_voz/
+data/estado_kiosco.json
+config/observatorio.ini
+# Documentos del cliente y del proyecto de título (no se publican)
+contexto/
+# Archivos temporales de Office y del sistema
+~$*
+Thumbs.db
+desktop.ini
+# Registros y datos de ejecución
+data/kiosco.log
+data/mediciones/
+*.log

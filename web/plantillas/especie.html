@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% from "macros.html" import chip_uicn %}
+{% block titulo %}{{ 'Nueva especie' if nueva else especie.nombre_comun }}{% endblock %}
+{% block contenido %}
+<p><a href="{{ url_for('especies') }}">← Catálogo</a></p>
+<div class="ficha-cabecera">
+  {% set imagen = url_archivo(especie.ruta_foto) or url_archivo(ultima_captura) %}
+  {% if imagen %}<img src="{{ imagen }}" alt="">{% endif %}
+  <div>
+    <h1>{{ 'Nueva especie' if nueva else especie.nombre_comun }}</h1>
+    {% if not nueva %}
+    <div class="cientifico" style="font-size:16px">{{ especie.nombre_cientifico }}</div>
+    <p style="margin:8px 0 0">{{ chip_uicn(especie.conservacion_uicn) }}
+      {% if especie.activo %}<span class="chip bien">Activa</span>{% else %}<span class="chip">Inactiva</span>{% endif %}
+      <span class="chip info">{{ avistamientos }} avistamiento{{ '' if avistamientos == 1 else 's' }}</span></p>
+    <p class="ayuda" style="margin:6px 0 0">N.º {{ especie.id_especie }}{% if especie.fecha_actualizacion %} · actualizada {{ especie.fecha_actualizacion }}{% if editor %} por {{ editor.nombre }}{% endif %}{% endif %}
+      {% if not especie.ruta_foto and ultima_captura %} · la imagen es la última captura de la cámara{% endif %}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="tarjeta">
+  <h2>Leer ficha técnica</h2>
+  {% if lector.disponible %}
+  <p class="ayuda">Sube una foto, un escaneo o un PDF de la ficha técnica del ave. El lector la lee en el idioma
+    que elijas y rellena los campos que reconoce (nombres, taxonomía, medidas, conservación, hábitat, alimentación…).
+    Si está en inglés o alemán, se traduce al español y el texto original queda como traducción de ese idioma.
+    <strong>Nada se guarda hasta que revises y presiones «{{ 'Crear especie' if nueva else 'Guardar cambios' }}».</strong></p>
+  <form method="post" enctype="multipart/form-data" class="campos">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <input type="hidden" name="accion" value="leer_ficha">
+    <div class="campo"><label for="idioma_documento">Idioma del documento</label>
+      <select id="idioma_documento" name="idioma_documento">
+        {% for codigo, nombre in idiomas.items() %}
+        <option value="{{ codigo }}" {{ 'selected' if lectura and lectura.idioma == codigo }} {{ 'disabled' if codigo not in lector.idiomas }}>{{ nombre }}</option>
+        {% endfor %}
+      </select></div>
+    <div class="campo"><label for="documento">Ficha técnica (JPG, PNG, TIFF o PDF)</label>
+      <input type="file" id="documento" name="documento" accept=".jpg,.jpeg,.png,.tif,.tiff,.bmp,.webp,.pdf" required></div>
+    <div class="campo"><label>&nbsp;</label><button class="boton secundario" type="submit">Leer y rellenar</button></div>
+  </form>
+  <p class="ayuda" style="margin:0">{{ lector.version }} · idiomas: {{ lector.idiomas | map('upper') | join(', ') }}{% if lector.error %} · {{ lector.error }}{% endif %}</p>
+  {% else %}
+  <p class="ayuda">El lector de fichas no está disponible en este equipo: {{ lector.error }}</p>
+  {% endif %}
+  {% if lectura %}
+  <details style="margin-top:10px">
+    <summary>Texto leído del documento ({{ lectura.nombre_idioma }}){% if lectura.reconocidos %} · campos reconocidos: {{ lectura.reconocidos | join(', ') }}{% endif %}</summary>
+    <pre style="white-space:pre-wrap;max-height:320px;overflow:auto">{{ lectura.texto }}</pre>
+  </details>
+  {% endif %}
+</div>
+
+<form method="post" enctype="multipart/form-data">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  {% if not nueva %}<input type="hidden" name="revision" value="{{ revision }}">{% endif %}
+  {% if lectura and lectura.originales %}
+  <input type="hidden" name="lectura_idioma" value="{{ lectura.idioma }}">
+  {% for campo, texto in lectura.originales.items() %}<input type="hidden" name="lectura_{{ campo }}" value="{{ texto }}">{% endfor %}
+  {% endif %}
+  {% for titulo, campos in secciones %}
+  <div class="tarjeta">
+    <h2>{{ titulo }}</h2>
+    <div class="{{ 'campos' if titulo != 'Ficha' else '' }}">
+      {% for nombre, etiqueta, tipo, obligatorio in campos %}
+      <div class="campo">
+        <label for="{{ nombre }}">{{ etiqueta }}{% if obligatorio %} *{% endif %}</label>
+        {% if tipo == 'area' %}
+        <textarea id="{{ nombre }}" name="{{ nombre }}">{{ especie[nombre] or '' }}</textarea>
+        {% else %}
+        <input type="text" id="{{ nombre }}" name="{{ nombre }}" value="{{ especie[nombre] or '' }}" {{ 'required' if obligatorio }}>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="tarjeta">
+    <h2>Foto, canto y visibilidad</h2>
+    <div class="campos">
+      <div class="campo"><label for="foto">Foto (JPG, PNG o WEBP)</label>
+        <input type="file" id="foto" name="foto" accept=".jpg,.jpeg,.png,.webp">
+        {% if especie.ruta_foto %}<div class="ayuda">Actual: {{ especie.ruta_foto }}</div>
+        <label class="check"><input type="checkbox" name="quitar_foto" value="1"> Quitar foto</label>{% endif %}</div>
+      <div class="campo"><label for="audio">Canto (WAV, OGG o MP3)</label>
+        <input type="file" id="audio" name="audio" accept=".wav,.ogg,.mp3">
+        {% if especie.ruta_audio_canto %}<div class="ayuda">Actual: {{ especie.ruta_audio_canto }}</div>
+        <audio controls preload="none" src="{{ url_archivo(especie.ruta_audio_canto) }}" style="width:100%;margin-top:6px"></audio>
+        <label class="check"><input type="checkbox" name="quitar_audio" value="1"> Quitar canto</label>{% endif %}
+        <div class="ayuda">Sin canto, la trivia usa la foto o una pista escrita. Si el kiosco no tiene Pygame, solo reproduce WAV.</div></div>
+    </div>
+    <label class="check"><input type="checkbox" name="activo" value="1" {{ 'checked' if especie.activo }}> Especie activa (visible en kiosco y trivia)</label>
+  </div>
+
+  <div class="acciones">
+    <button class="boton" type="submit">{{ 'Crear especie' if nueva else 'Guardar cambios' }}</button>
+    <a class="boton secundario" href="{{ url_for('especies') }}">Cancelar</a>
+  </div>
+</form>
+
+{% if traducciones %}
+<div class="tarjeta" id="traducciones" style="margin-top:24px">
+  <h2>Traducciones (English · Deutsch)</h2>
+  <p class="ayuda">La ficha se escribe en español; al guardarla se traduce sola al inglés y al alemán (sin internet).
+    En la pantalla táctil el visitante elige el idioma. Lo que corrijas aquí queda marcado «revisada» y no se vuelve a
+    traducir solo. Medidas, taxonomía y nombre científico son iguales en todos los idiomas.</p>
+  {% if traduciendo %}<p><span class="chip info">Traduciendo… recarga la página en unos segundos</span></p>{% endif %}
+  <form method="post" action="{{ url_for('traducciones_especie', id_especie=especie.id_especie) }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    {% for idioma in idiomas_traduccion %}
+    <details {{ 'open' if loop.first }} style="margin:10px 0">
+      <summary><strong>{{ idiomas[idioma] }}</strong></summary>
+      {% for campo in campos_traducibles %}
+      {% set t = traducciones[idioma][campo] %}
+      {% if especie[campo] %}
+      <div class="campo">
+        <label for="{{ idioma }}__{{ campo }}">{{ etiquetas[campo] }}
+          {% if t.manual %}<span class="chip bien">revisada</span>{% elif t.texto %}<span class="chip">automática</span>{% endif %}
+          {% if t.desactualizada %}<span class="chip riesgo" title="El texto en español cambió después de esta traducción">el español cambió</span>{% endif %}
+          {% if t.falta %}<span class="chip riesgo">falta</span>{% endif %}</label>
+        <textarea id="{{ idioma }}__{{ campo }}" name="{{ idioma }}__{{ campo }}" rows="{{ 1 if campo in ('nombre_comun', 'conservacion_uicn', 'conservacion_rce') else 3 }}">{{ t.texto }}</textarea>
+        <div class="ayuda">Español: {{ especie[campo] }}</div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </details>
+    {% endfor %}
+    <div class="acciones">
+      <button class="boton" type="submit" name="accion" value="guardar">Guardar traducciones</button>
+      <button class="boton secundario" type="submit" name="accion" value="actualizar" formnovalidate>Traducir lo que falta o cambió</button>
+      <button class="boton secundario" type="submit" name="accion" value="rehacer" formnovalidate
+        onclick="return confirm('Se volverá a traducir TODO automáticamente, incluidas las correcciones a mano. ¿Continuar?')">Traducir todo de nuevo</button>
+    </div>
+  </form>
+</div>
+{% endif %}
+
+{% if not nueva %}
+<div class="tarjeta" style="margin-top:24px">
+  <h2>Eliminar</h2>
+  <p class="ayuda">Solo se pueden eliminar especies sin avistamientos registrados; si tiene historial, desactívala para conservar la bitácora.</p>
+  <form method="post" action="{{ url_for('eliminar_especie', id_especie=especie.id_especie) }}" onsubmit="return confirm('¿Eliminar esta especie del catálogo?')">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button class="boton peligro" type="submit" {{ 'disabled' if avistamientos }}>Eliminar especie</button>
+  </form>
+</div>
+{% endif %}
+{% endblock %}

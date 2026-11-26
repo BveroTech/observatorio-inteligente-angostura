@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Observatorio · Configurar pantallas
+Comment=Elige el monitor del kiosco, el de la pantalla táctil y sus paneles táctiles
+Exec=bash -c 'observatorio-pantallas --listar; echo; echo "Edita SALIDA_KIOSCO, SALIDA_TACTIL y los paneles táctiles. Guarda con Ctrl+O y sale con Ctrl+X."; read -p "Enter para abrir el archivo..."; nano /opt/observatorio-angostura/config/pantallas.conf && observatorio-pantallas; read -p "Listo. Enter para cerrar."'
+Icon=observatorio-angostura
+Terminal=true
+Categories=Settings;

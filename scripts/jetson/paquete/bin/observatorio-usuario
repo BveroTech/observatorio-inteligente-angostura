@@ -1,0 +1,4 @@
+#!/bin/bash
+# Crea o cambia un usuario del portal de administración.
+APP=/opt/observatorio-angostura
+cd "$APP" && exec "$APP/.venv/bin/python" scripts/cli_admin/crear_usuario.py "$@"

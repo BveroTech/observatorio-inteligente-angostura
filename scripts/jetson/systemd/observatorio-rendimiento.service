@@ -1,0 +1,17 @@
+# OPCIONAL · fija el modo de energía y las frecuencias máximas del Jetson al arrancar.
+# Lo instala scripts/jetson/instalar.sh solo con --rendimiento-maximo, que
+# reemplaza __MODO__ por el número de modo elegido (ver LEEME_JETSON.md,
+# "Modo de energía"). jetson_clocks fija CPU/GPU/EMC en su máximo dentro del
+# modo activo: más FPS y menos variación, a cambio de más consumo y calor.
+[Unit]
+Description=Observatorio - modo de energia y jetson_clocks
+After=nvpmodel.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env nvpmodel -m __MODO__
+ExecStart=/usr/bin/env jetson_clocks
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

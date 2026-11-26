@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block titulo %}Mi cuenta{% endblock %}
+{% block contenido %}
+<h1>Mi cuenta</h1>
+<p class="sub">{{ usuario.correo }} · {{ usuario.rol }}{% if usuario.ultimo_login %} · último ingreso {{ usuario.ultimo_login }}{% endif %}</p>
+<div class="tarjeta" style="max-width:480px">
+  <h2>Cambiar contraseña</h2>
+  <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="campo"><label for="actual">Contraseña actual</label>
+      <input type="password" id="actual" name="actual" required autocomplete="current-password"></div>
+    <div class="campo"><label for="nueva">Nueva contraseña</label>
+      <input type="password" id="nueva" name="nueva" required minlength="8" autocomplete="new-password">
+      <div class="ayuda">Mínimo 8 caracteres. Se guarda solo su hash, nunca el texto.</div></div>
+    <div class="campo"><label for="repetida">Repite la nueva contraseña</label>
+      <input type="password" id="repetida" name="repetida" required minlength="8" autocomplete="new-password"></div>
+    <button class="boton" type="submit">Guardar</button>
+  </form>
+</div>
+{% endblock %}

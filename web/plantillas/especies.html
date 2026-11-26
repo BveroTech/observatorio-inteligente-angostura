@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% from "macros.html" import chip_uicn, paginacion %}
+{% block titulo %}Especies{% endblock %}
+{% block contenido %}
+<div class="acciones" style="justify-content:space-between">
+  <div><h1>Catálogo de especies</h1><p class="sub">{{ total }} especie{{ '' if total == 1 else 's' }}{% if texto %} para «{{ texto }}»{% endif %}. Las inactivas no aparecen en el kiosco ni en la trivia.</p></div>
+  <a class="boton" href="{{ url_for('especie') }}">+ Nueva especie</a>
+</div>
+<div class="tarjeta">
+  <form class="filtros" method="get">
+    <div style="flex:1;min-width:220px"><label for="q">Buscar</label>
+      <input type="search" id="q" name="q" value="{{ texto }}" placeholder="Nombre común, científico, familia u orden"></div>
+    <label class="check"><input type="checkbox" name="activas" value="1" {{ 'checked' if solo_activas }}> Solo activas</label>
+    <button class="boton" type="submit">Filtrar</button>
+  </form>
+  <div class="tabla"><table>
+    <tr><th>N.º</th><th></th><th>Especie</th><th>Familia</th><th>UICN</th><th>Medios</th><th>Estado</th><th></th></tr>
+    {% for e in filas %}
+    <tr>
+      <td>{{ e.id_especie }}</td>
+      <td>{% if e.ruta_foto %}<img class="mini" src="{{ url_archivo(e.ruta_foto) }}" alt="">{% endif %}</td>
+      <td><a href="{{ url_for('especie', id_especie=e.id_especie) }}"><b>{{ e.nombre_comun }}</b></a><div class="cientifico">{{ e.nombre_cientifico }}</div></td>
+      <td>{{ e.familia }}</td>
+      <td>{{ chip_uicn(e.conservacion_uicn) }}</td>
+      <td>{% if e.ruta_foto %}<span class="chip info">Foto</span>{% endif %} {% if e.ruta_audio_canto %}<span class="chip info">Canto</span>{% endif %}</td>
+      <td>{% if e.activo %}<span class="chip bien">Activa</span>{% else %}<span class="chip">Inactiva</span>{% endif %}</td>
+      <td>
+        <form class="en-linea" method="post" action="{{ url_for('cambiar_activo', id_especie=e.id_especie) }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="volver" value="{{ request.full_path }}">
+          <input type="hidden" name="activo" value="{{ 0 if e.activo else 1 }}">
+          <button class="boton secundario chico" type="submit">{{ 'Desactivar' if e.activo else 'Activar' }}</button>
+        </form>
+      </td>
+    </tr>
+    {% else %}
+    <tr><td colspan="8">No hay especies que coincidan.</td></tr>
+    {% endfor %}
+  </table></div>
+  {{ paginacion(pagina, paginas, 'especies', {'q': texto, 'activas': '1' if solo_activas else ''}) }}
+</div>
+{% endblock %}

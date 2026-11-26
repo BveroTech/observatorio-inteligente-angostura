@@ -1,0 +1,5 @@
+#!/bin/bash
+# Abre el portal de administración en el navegador y muestra su enlace en la red.
+APP=/opt/observatorio-angostura
+cd "$APP" && "$APP/.venv/bin/python" main_admin.py --mostrar-enlace 2>/dev/null
+xdg-open "http://localhost:5000" >/dev/null 2>&1 &

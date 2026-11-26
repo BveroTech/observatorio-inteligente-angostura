@@ -1,0 +1,20 @@
+#!/bin/bash
+# Abre el Observatorio (kiosco + pantalla táctil).
+#   observatorio                    lo abre como servicio (una sola copia; se reabre si falla)
+#   observatorio --fuente video     lo abre directamente con esas opciones (pruebas)
+#   observatorio --cerrar           cierra el kiosco (mantención)
+APP=/opt/observatorio-angostura
+if [ "${1:-}" = "--cerrar" ]; then
+    systemctl --user stop observatorio-kiosco.service 2>/dev/null
+    pkill -f "$APP/main_kiosco.py" 2>/dev/null
+    exit 0
+fi
+if [ $# -eq 0 ] && systemctl --user cat observatorio-kiosco.service >/dev/null 2>&1; then
+    systemctl --user reset-failed observatorio-kiosco.service 2>/dev/null
+    exec systemctl --user start observatorio-kiosco.service
+fi
+if systemctl --user is-active --quiet observatorio-kiosco.service 2>/dev/null; then
+    echo "El kiosco ya está abierto como servicio; se cierra para abrirlo con: $*"
+    systemctl --user stop observatorio-kiosco.service
+fi
+exec /bin/bash "$APP/scripts/jetson/ejecutar_observatorio.sh" "$@"

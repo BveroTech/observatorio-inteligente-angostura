@@ -1,0 +1,16 @@
+# Solo para entrenar y exportar modelos (no se necesita en el kiosco).
+# Instalar con laboratorio_ia\scripts_entrenamiento\bat\instalar_entrenamiento.bat
+#
+# IMPORTANTE (GPU NVIDIA): desde PyPI, torch para Windows es SOLO CPU. Con GPU,
+# instalar primero la versión CUDA (el .bat lo hace solo):
+#   .venv\Scripts\python.exe -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#   .venv\Scripts\python.exe -m pip install -r laboratorio_ia\requirements-entrenamiento.txt
+#
+# Licencia: Ultralytics YOLO se distribuye bajo AGPL-3.0. Para un prototipo
+# académico no hay costo, pero un uso comercial o un despliegue cerrado
+# requiere cumplir la AGPL (publicar el código) o una licencia Enterprise.
+ultralytics>=8.3.0
+torch>=2.4.0
+torchvision>=0.19.0
+onnx>=1.16.0
+PyYAML>=6.0

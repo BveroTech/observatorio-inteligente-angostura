@@ -1,0 +1,11 @@
+Logo del encabezado
+===================
+
+Si copias aqui un archivo llamado "logo.png", la aplicacion lo muestra en el
+encabezado, a la izquierda del titulo. Usa la version del logo que indique el
+manual de marca para fondo blanco, en PNG con fondo transparente.
+
+Si no hay logo, se muestra una barra verde en su lugar.
+
+El nombre del archivo y su altura se cambian en src/tema.py
+(ARCHIVO_LOGO y ALTO_LOGO).

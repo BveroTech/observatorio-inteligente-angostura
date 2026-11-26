@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block titulo %}Administración{% endblock %} · {{ T.TITULO }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+  <div class="degradado"></div>
+  <header class="barra">
+    <div class="interior">
+      <a class="marca" href="{{ url_for('inicio') }}">
+        <span class="franja"></span>
+        <span><b>{{ T.TITULO }}</b><small>Portal de administración · {{ T.SUBTITULO }}</small></span>
+      </a>
+      {% if usuario %}
+      {% set actual = request.endpoint %}
+      <nav class="menu">
+        {% if es_admin %}<a href="{{ url_for('panel') }}" class="{{ 'activo' if actual == 'panel' }}">Panel</a>{% endif %}
+        <a href="{{ url_for('especies') }}" class="{{ 'activo' if actual in ('especies', 'especie') }}">Especies</a>
+        <a href="{{ url_for('bitacora') }}" class="{{ 'activo' if actual == 'bitacora' }}">Bitácora</a>
+        <a href="{{ url_for('por_identificar') }}" class="{{ 'activo' if actual in ('por_identificar', 'resolver_por_identificar') }}">Por identificar{% if pendientes_identificar %} <span class="insignia">{{ pendientes_identificar }}</span>{% endif %}</a>
+        {% if es_admin %}<a href="{{ url_for('fuente_video') }}" class="{{ 'activo' if actual == 'fuente_video' }}">Fuente de video</a>{% endif %}
+        {% if es_admin %}<a href="{{ url_for('usuarios') }}" class="{{ 'activo' if actual == 'usuarios' }}">Usuarios</a>{% endif %}
+      </nav>
+      <div class="quien">
+        <a href="{{ url_for('cuenta') }}">{{ usuario.nombre }}</a> · {{ usuario.rol }}
+        <form method="post" action="{{ url_for('salir') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <button class="boton secundario chico" type="submit">Salir</button>
+        </form>
+      </div>
+      {% endif %}
+    </div>
+  </header>
+  <main>
+    {% with mensajes = get_flashed_messages(with_categories=true) %}
+    {% if mensajes %}<div class="avisos">{% for tipo, texto in mensajes %}<div class="aviso {{ tipo }}">{{ texto }}</div>{% endfor %}</div>{% endif %}
+    {% endwith %}
+    {% block contenido %}{% endblock %}
+  </main>
+  <footer class="pie">{{ T.PIE }}</footer>
+</body>
+</html>

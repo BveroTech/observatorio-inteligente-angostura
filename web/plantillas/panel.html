@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block titulo %}Panel{% endblock %}
+{% block contenido %}
+<div class="acciones" style="justify-content:space-between;margin-bottom:16px">
+  <div>
+    <h1>Panel del observatorio</h1>
+    <p class="sub" style="margin:0">Avistamientos y rendimiento {% if dias == 1 %}de hoy{% else %}de los últimos {{ dias }} días{% endif %}.</p>
+  </div>
+  <form class="filtros" method="get" style="margin:0">
+    <div><label for="dias">Período</label>
+      <select id="dias" name="dias" onchange="this.form.submit()">
+        {% for d, t in [(1, 'Hoy'), (7, '7 días'), (30, '30 días')] %}<option value="{{ d }}" {{ 'selected' if d == dias }}>{{ t }}</option>{% endfor %}
+      </select></div>
+    <label class="check"><input type="checkbox" name="simulacion" value="1" {{ 'checked' if incluir_simulacion }} onchange="this.form.submit()"> Incluir modo demostración en el período</label>
+    <noscript><button class="boton chico">Aplicar</button></noscript>
+  </form>
+</div>
+
+{% set ultima = metricas.ultima %}
+<div class="rejilla r4" style="margin-bottom:20px">
+  <div class="cifra"><div class="rotulo">Avistamientos hoy</div><div class="valor">{{ hoy_total }}</div>
+    <div class="nota">{{ hoy_especies }} especie{{ '' if hoy_especies == 1 else 's' }} activa{{ '' if hoy_especies == 1 else 's' }} · incluye demostración</div></div>
+  <div class="cifra"><div class="rotulo">Avistamientos del período</div><div class="valor">{{ periodo_total }}</div>
+    <div class="nota">{{ simulados }} en modo demostración {{ '(excluidos)' if not incluir_simulacion else '(incluidos)' }}</div></div>
+  <div class="cifra"><div class="rotulo">Estado de la cámara</div>
+    <div class="valor" style="font-size:20px;padding:6px 0">
+      {% if ultima %}<span class="chip {{ 'bien' if ultima.estado_camara == 'ONLINE' else ('riesgo' if ultima.estado_camara in ('FAILOVER_DEMO', 'SIN_SENAL') else 'atencion') }}" style="font-size:15px">{{ texto_estado[ultima.estado_camara] }}</span>
+      {% else %}<span class="chip">Sin registros</span>{% endif %}</div>
+    <div class="nota">{% if ultima %}Último registro {{ ultima.fecha_registro }}{% else %}El kiosco registra métricas cada minuto{% endif %}</div></div>
+  <div class="cifra"><div class="rotulo">Catálogo</div><div class="valor">{{ especies_activas }}</div>
+    <div class="nota">especies activas de {{ especies_total }}</div></div>
+</div>
+
+<div class="tarjeta">
+  <h2>Rendimiento medido</h2>
+  <p class="ayuda" style="margin-top:-6px">Valores registrados por el kiosco en este equipo. Sirven como evidencia para contrastar las metas de la Guía 2.2 (FPS y latencia), no como garantía.</p>
+  <div class="rejilla r4">
+    <div class="cifra"><div class="rotulo">FPS promedio</div><div class="valor">{{ metricas.fps | numero(1) }}</div></div>
+    <div class="cifra"><div class="rotulo">Inferencia promedio</div><div class="valor">{{ metricas.inferencia_ms | numero(0) }}{% if metricas.inferencia_ms is not none %} <small style="font-size:14px">ms</small>{% endif %}</div>
+      <div class="nota">máximo {{ metricas.inferencia_ms_max | numero(0) }} ms</div></div>
+    <div class="cifra"><div class="rotulo">Descartadas por tamaño</div><div class="valor">{{ tasas.px | porcentaje }}</div>
+      <div class="nota">{{ metricas.descartes_px or 0 }} de {{ candidatas }} candidatas (caja menor al mínimo en px)</div></div>
+    <div class="cifra"><div class="rotulo">Descartadas por confianza</div><div class="valor">{{ tasas.confianza | porcentaje }}</div>
+      <div class="nota">{{ metricas.descartes_confianza or 0 }} de {{ candidatas }} candidatas (bajo el umbral)</div></div>
+  </div>
+  <p class="ayuda" style="margin-bottom:0">{{ metricas.registros or 0 }} registros de métricas en el período · {{ metricas.registros_demo or 0 }} en modo demostración.</p>
+</div>
+
+<div class="rejilla r2">
+  <div class="tarjeta">
+    <h2>Especies más vistas</h2>
+    {% if por_especie %}
+    <div class="horizontal">
+      {% for e in por_especie %}
+      <div class="fila" title="Confianza media {{ e.confianza_media | porcentaje }}">
+        <span class="nombre"><a href="{{ url_for('bitacora', especie=e.id_especie) }}">{{ e.nombre_comun }}</a></span>
+        <div class="pista"><div class="relleno" style="width: {{ (100 * e.cantidad / max_especie) | round(1) }}%"></div></div>
+        <span class="num">{{ e.cantidad }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}<p class="ayuda">Sin avistamientos en el período.</p>{% endif %}
+  </div>
+  <div class="tarjeta">
+    <h2>Avistamientos por hora</h2>
+    <div class="barras">
+      {% for hora, cantidad in por_hora %}
+      <div class="col" title="{{ '%02d' % hora }}:00 · {{ cantidad }}">
+        <div class="barra" style="height: {{ (100 * cantidad / max_hora) | round(1) }}%"></div>
+        <span class="eje">{{ hora if hora % 3 == 0 else '' }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="tarjeta">
+  <h2>Avistamientos por día</h2>
+  <div class="barras dias">
+    {% for dia, cantidad in por_dia %}
+    <div class="col" title="{{ dia }} · {{ cantidad }}">
+      <div class="barra" style="height: {{ (100 * cantidad / max_dia) | round(1) }}%"></div>
+      <span class="eje">{{ dia[8:10] }}/{{ dia[5:7] }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="tarjeta">
+  <h2>Últimos registros de métricas</h2>
+  {% if ultimas_metricas %}
+  <div class="tabla"><table>
+    <tr><th>Fecha</th><th>Cámara</th><th class="num">FPS</th><th class="num">Inferencia ms (prom / máx)</th><th class="num">Detecciones</th><th class="num">Desc. px</th><th class="num">Desc. confianza</th></tr>
+    {% for m in ultimas_metricas %}
+    <tr><td>{{ m.fecha_registro }}</td><td>{{ texto_estado[m.estado_camara] }}</td><td class="num">{{ m.fps_promedio | numero(1) }}</td>
+      <td class="num">{{ m.inferencia_ms_promedio | numero(0) }} / {{ m.inferencia_ms_maximo | numero(0) }}</td>
+      <td class="num">{{ m.total_detecciones }}</td><td class="num">{{ m.total_descartes_px }}</td><td class="num">{{ m.total_descartes_confianza }}</td></tr>
+    {% endfor %}
+  </table></div>
+  {% else %}<p class="ayuda">Aún no hay métricas. Se registran cuando el kiosco está en marcha.</p>{% endif %}
+</div>
+{% endblock %}

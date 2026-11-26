@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block titulo %}Fuente de video{% endblock %}
+{% block contenido %}
+<h1>Fuente de video</h1>
+<p class="ayuda">Qué analiza la IA del kiosco. El cambio se aplica en vivo: el kiosco lo toma en unos segundos, sin reiniciarlo.</p>
+
+<div class="tarjeta">
+  <h2>Kiosco ahora</h2>
+  {% if estado %}
+  <p><strong>{{ estado.descripcion }}</strong>
+    {% set chip = {'ONLINE': 'bien', 'FAILOVER_DEMO': 'atencion', 'RECONECTANDO': 'atencion'}.get(estado.estado, 'riesgo') %}
+    <span class="chip {{ chip }}">{{ {'ONLINE': 'Recibiendo imagen', 'FAILOVER_DEMO': 'Sin señal: muestra el video de demostración',
+      'RECONECTANDO': 'Conectando…', 'SIN_SENAL': 'Sin señal'}.get(estado.estado, estado.estado) }}</span></p>
+  {% if estado.error and estado.estado != 'ONLINE' %}<p class="ayuda">Último error: {{ estado.error }}</p>{% endif %}
+  {% else %}
+  <p class="ayuda">El kiosco no está abierto en este equipo (o no ha informado su estado en los últimos segundos).</p>
+  {% endif %}
+  <p><a href="{{ url_for('fuente_video') }}">Actualizar</a></p>
+</div>
+
+<form method="post" class="tarjeta">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <h2>Elegir fuente</h2>
+
+  <label class="check"><input type="radio" name="tipo" value="rtsp" {{ 'checked' if actual.tipo == 'rtsp' }}>
+    <strong>{{ tipos.rtsp }}</strong> · la cámara del humedal (operación normal)</label>
+  <div class="campo" style="margin-left:28px">
+    <label for="url_rtsp">Dirección de la cámara</label>
+    <input type="password" id="url_rtsp" name="url_rtsp" autocomplete="off"
+      placeholder="{{ url_enmascarada or 'rtsp://usuario:contraseña@IP:554/cam/realmonitor?channel=1&subtype=0' }}">
+    <div class="ayuda">{% if url_enmascarada %}Guardada: {{ url_enmascarada }}. Déjalo vacío para conservarla.{% else %}Aún no hay una dirección guardada.{% endif %}
+      Dahua: <code>rtsp://usuario:contraseña@IP:554/cam/realmonitor?channel=1&amp;subtype=0</code></div>
+  </div>
+
+  <label class="check"><input type="radio" name="tipo" value="pantalla" {{ 'checked' if actual.tipo == 'pantalla' }}>
+    <strong>{{ tipos.pantalla }}</strong> · analiza lo que se ve en un monitor (pruebas sin cámara, videos de aves)</label>
+  <div class="campo" style="margin-left:28px">
+    <label for="monitor">Monitor que se captura</label>
+    <select id="monitor" name="monitor">
+      {% for m in monitores %}
+      <option value="{{ m.numero }}" {{ 'selected' if actual.monitor == m.numero }}>Monitor {{ m.numero }} · {{ m.ancho }}×{{ m.alto }}{{ ' (principal)' if m.principal }}</option>
+      {% else %}
+      {% for n in range(1, 5) %}<option value="{{ n }}" {{ 'selected' if actual.monitor == n }}>Monitor {{ n }}</option>{% endfor %}
+      {% endfor %}
+    </select>
+    <div class="ayuda">No elijas el monitor del kiosco ni el de la pantalla táctil: la IA se analizaría a sí misma.
+      Las aves vistas en pantalla no cuentan como avistamientos reales.</div>
+  </div>
+
+  <label class="check"><input type="radio" name="tipo" value="ventana" {{ 'checked' if actual.tipo == 'ventana' }}>
+    <strong>{{ tipos.ventana }}</strong> · analiza solo la ventana de un programa (navegador, VLC…), aunque esté detrás de otras</label>
+  <div class="campo" style="margin-left:28px">
+    <label for="ventana">Aplicación abierta en el equipo del kiosco</label>
+    <select id="ventana" name="ventana">
+      {% for v in ventanas %}
+      <option value="{{ v.programa }}|{{ v.titulo }}" {{ 'selected' if actual.tipo == 'ventana' and actual.programa == v.programa }}>{{ v.programa }} · {{ v.titulo[:70] }}{{ ' (minimizada)' if v.minimizada }}</option>
+      {% endfor %}
+      <option value="_manual" {{ 'selected' if not ventanas or (actual.tipo == 'ventana' and actual.programa not in ventanas|map(attribute='programa')|list) }}>Escribir el programa a mano…</option>
+    </select>
+    <div class="campos" style="margin-top:8px">
+      <div class="campo"><label for="programa_manual">Programa (si se escribe a mano)</label>
+        <input type="text" id="programa_manual" name="programa_manual" placeholder="chrome.exe" value="{{ actual.programa if actual.tipo == 'ventana' else '' }}"></div>
+      <div class="campo"><label for="titulo_filtro">Texto del título (opcional)</label>
+        <input type="text" id="titulo_filtro" name="titulo_filtro" placeholder="YouTube" value="{{ actual.titulo if actual.tipo == 'ventana' else '' }}"></div>
+    </div>
+    <label class="check"><input type="checkbox" name="usar_titulo" value="1"> Usar exactamente el título de la ventana elegida
+      (si no, vale cualquier ventana de ese programa; útil porque el navegador cambia el título al cambiar de video)</label>
+    <div class="ayuda">{% if not ventanas %}No se encontraron aplicaciones abiertas en este equipo (solo Windows). {% endif %}
+      Si la imagen sale en negro (algunos reproductores con aceleración por GPU), se captura la zona de la pantalla
+      donde está la ventana: en ese caso debe quedar visible. Si la ventana se minimiza o se cierra, el kiosco muestra
+      el video de demostración hasta que vuelva.</div>
+  </div>
+
+  <label class="check"><input type="radio" name="tipo" value="camara" {{ 'checked' if actual.tipo == 'camara' }}>
+    <strong>{{ tipos.camara }}</strong></label>
+  <div class="campo" style="margin-left:28px">
+    <label for="indice">Número de cámara (0 = la primera)</label>
+    <input type="number" id="indice" name="indice" min="0" max="9" value="{{ actual.indice }}" style="max-width:120px">
+  </div>
+
+  <label class="check"><input type="radio" name="tipo" value="video" {{ 'checked' if actual.tipo == 'video' }}>
+    <strong>{{ tipos.video }}</strong> · video de aves en bucle (presentaciones)</label>
+
+  <div class="acciones"><button class="boton" type="submit">Guardar y aplicar</button></div>
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+#!/bin/bash
+# Al desinstalar se CONSERVAN los datos (base de datos, capturas, fotos) en /opt/observatorio-angostura/data.
+# Solo "sudo apt purge observatorio-angostura" los borra.
+set -u
+case "${1:-}" in
+    remove)
+        rm -rf /etc/systemd/system/observatorio-admin.service.d /etc/systemd/user/observatorio-kiosco.service.d
+        [ -d /run/systemd/system ] && systemctl daemon-reload || true
+        ;;
+    purge)
+        rm -rf /opt/observatorio-angostura /etc/default/observatorio-angostura \
+               /etc/systemd/system/observatorio-admin.service.d /etc/systemd/user/observatorio-kiosco.service.d
+        ;;
+esac
+exit 0

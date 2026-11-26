@@ -1,0 +1,18 @@
+{% macro chip_uicn(texto) -%}
+  {%- set codigo = (texto or '')[:2] | upper -%}
+  {%- if not texto -%}<span class="chip">Sin dato</span>
+  {%- elif codigo == 'LC' -%}<span class="chip bien">{{ texto }}</span>
+  {%- elif codigo == 'NT' -%}<span class="chip atencion">{{ texto }}</span>
+  {%- elif codigo in ('VU', 'EN', 'CR') -%}<span class="chip riesgo">{{ texto }}</span>
+  {%- else -%}<span class="chip">{{ texto }}</span>{%- endif -%}
+{%- endmacro %}
+
+{% macro paginacion(pagina, paginas, endpoint, argumentos) -%}
+{% if paginas > 1 %}
+<div class="paginacion">
+  {% if pagina > 1 %}<a class="boton secundario chico" href="{{ url_for(endpoint, pagina=pagina - 1, **argumentos) }}">← Anterior</a>{% endif %}
+  <span>Página {{ pagina }} de {{ paginas }}</span>
+  {% if pagina < paginas %}<a class="boton secundario chico" href="{{ url_for(endpoint, pagina=pagina + 1, **argumentos) }}">Siguiente →</a>{% endif %}
+</div>
+{% endif %}
+{%- endmacro %}

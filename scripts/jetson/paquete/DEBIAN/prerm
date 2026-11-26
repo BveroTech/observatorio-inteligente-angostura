@@ -1,0 +1,13 @@
+#!/bin/bash
+# Antes de desinstalar o actualizar: detiene el portal y el kiosco.
+set -u
+if [ -d /run/systemd/system ]; then
+    systemctl stop observatorio-admin.service >/dev/null 2>&1 || true
+fi
+pkill -f "/opt/observatorio-angostura/main_kiosco.py" >/dev/null 2>&1 || true
+if [ "${1:-}" = "remove" ]; then
+    systemctl disable observatorio-admin.service >/dev/null 2>&1 || true
+    systemctl --global disable observatorio-kiosco.service >/dev/null 2>&1 || true
+    rm -rf /opt/observatorio-angostura/.venv
+fi
+exit 0

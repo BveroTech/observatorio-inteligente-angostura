@@ -1,0 +1,4 @@
+{
+  "_comentario": "Copia este archivo como camara_local.json y escribe la URL real. camara_local.json no se comparte ni se sube a repositorios.",
+  "rtsp_url": "rtsp://USUARIO:CLAVE@IP_DE_LA_CAMARA:554/stream1"
+}
